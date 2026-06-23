@@ -1,0 +1,312 @@
+ * {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --black: #0D0D0D;
+    --cream: #FFFDF7;
+    --purple: #9723C9;
+    --yellow: #fbe000;
+    --yellow-light: #FFFF00;
+    --orange: #FF4910;
+    --blue: #3300FF;
+  }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    font-family: 'Cousine', Cousine, monospace;
+    color: var(--black);
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* ===== NAVBAR ===== */
+  .navbar {
+    max-width: 1100px;
+    margin: 30px auto 0;
+    background: #FCFCFC;
+    border: 3px solid var(--black);
+    border-radius: 35px;
+    box-shadow: 4px 4px 0px var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 16px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 5;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+    .navbar a:hover {
+    background: #FFF6DE55;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    color: var(--black);
+    font-size: 16px;
+    box-shadow: 4px 4px var(--black);
+    padding: 8px 16px;
+
+  }
+
+  .navbar li.active a {
+    background: var(--yellow-light);
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px var(--black);
+    padding: 8px 16px;
+    font-weight: 700;
+    display: inline-block;
+  }
+
+  .navbar .cta a {
+    display: inline-block;
+    background: var(--yellow);
+    border: 3px solid var(--black);
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px var(--black);
+    padding: 14px 30px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'cousine';
+    cursor: pointer;
+    transition: all 0.1s ease;
+  }
+
+    .navbar .cta a:hover {
+    background: #FCFCFC;
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px var(--black);
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 24px 100px;
+    text-align: center;
+    overflow: visible;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 24px;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 19px;
+    max-width: 480px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+  }
+
+  .btn-yellow {
+    display: inline-block;
+    background: var(--yellow);
+    border: 3px solid var(--black);
+    border-radius: 8px;
+    box-shadow: 5px 5px 0px var(--black);
+    padding: 14px 30px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'cousine';
+    cursor: pointer;
+    transition: all 0.1s ease;
+  }
+
+  .btn-yellow:hover {
+    background: #FCFCFC;
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px var(--black);
+  }
+ .shape {
+    position: absolute;
+  }
+
+  .shape.star-blue {
+    width: 130px;
+    top: 100px;
+    right: 4%;
+  }
+
+  .shape.burst-orange {
+    width: 150px;
+    top: 250px;
+    left: 2%;
+  }
+
+  /* ===== PURPLE SECTION ===== */
+  .purple-section {
+    background: var(--purple);
+    color: #FCFCFC;
+    padding: 80px 24px 100px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .purple-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .purple-inner h2 {
+    font-size: 34px;
+    max-width: 650px;
+    line-height: 1.35;
+    margin: 0 0 50px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    background: #FCFCFC;
+    border: 3px solid var(--black);
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px var(--black);
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .card:hover{
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px var(--black);
+  }
+
+  .card h3 {
+    color: var(--orange);
+    font-size: 19px;
+    margin: 0 0 18px;
+  }
+
+  .card:nth-child(2) h3 { color: var(--blue); }
+  .card:nth-child(3) h3 { color: var(--purple); }
+
+  .card p {
+    font-size: 15px;
+    margin: 0;
+    color: inherit;
+  }
+  .card:nth-child(1) p { color: var(--orange); }
+  .card:nth-child(2) p { color: var(--blue); }
+  .card:nth-child(3) p { color: var(--purple); }
+
+  .shape.star-yellow {
+    width: 130px;
+    top: 0;
+    right: 6%;
+  }
+
+  .shape.rings-orange {
+    width: 200px;
+    bottom: -100px;
+    right: 25%;
+  }
+
+  /* ===== ABOUT SECTION ===== */
+  .about-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 24px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+  }
+
+  .about-image-wrap {
+    background: var(--orange);
+    border: 3px solid var(--black);
+    border-radius: 24px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-image-wrap img {
+    border-radius: 8px;
+  }
+
+  .fan-shape {
+    position: absolute;
+    width: 130px;
+    bottom: -40px;
+    left: 35%;
+  }
+
+  .about-text h2 {
+    font-size: 30px;
+    margin: 0 0 24px;
+    letter-spacing: 1px;
+  }
+
+  .about-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+  }
+
+  .about-text li {
+    margin-bottom: 20px;
+    padding-left: 22px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .about-text li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+  }
+
+  .btn-yellow.small {
+    padding: 10px 22px;
+    font-size: 15px;
+    box-shadow: 4px 4px 0px var(--black);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 800px) {
+    .cards { grid-template-columns: 1fr; }
+    .about-section { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 30px; }
+    .navbar ul { gap: 14px; }
+    .navbar a { font-size: 14px; }
+    .shape { display: none; }
+  }
