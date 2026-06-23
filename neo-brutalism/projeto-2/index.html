@@ -11,10 +11,10 @@
   <!-- NAVBAR -->
   <nav class="navbar">
     <ul>
-      <li class="active"><a href="#">Início</a></li>
-      <li><a href="#">Cursos</a></li>
-      <li><a href="#">Sobre Nós</a></li>
-      <li><a href="#">Preços</a></li>
+      <li class="active"><a href="#inicio">Início</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#sobre-nos">Sobre Nós</a></li>
+      <li><a href="#preços">Preços</a></li>
       <li><a href="#">Contatos</a></li>
     </ul>
     <ul>
@@ -23,7 +23,7 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="inicio">
         <svg class="shape star-blue" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
       <polygon points="100,10 130,80 195,80 140,120 160,190 100,150 40,190 60,120 5,80 70,80"
         fill="#2a1fd6" stroke="#111" stroke-width="4" stroke-linejoin="round"/>
@@ -39,9 +39,9 @@
     <a href="#" class="btn-yellow">Comece Já!</a>
   </section>
 
-  <!-- PURPLE SECTION -->
-  <section class="purple-section">
-    <div class="purple-inner">
+  <!-- CURSOS SECTION -->
+  <section class="cursos" id="cursos">
+    <div class="cursos-inner">
       <svg class="shape star-yellow" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <path d="M100 0 L120 80 L200 100 L120 120 L100 200 L80 120 L0 100 L80 80 Z"
           fill="#fbe000" stroke="#111" stroke-width="4" stroke-linejoin="round"/>
@@ -50,15 +50,15 @@
       <h2>Aprenda design, programação e criatividade com estilo brutalista.</h2>
 
       <div class="cards">
-        <div class="card">
+        <div class="card-cursos">
           <h3>HTML + CSS sem frescura</h3>
           <p>Construa páginas vibrantes e ousadas.</p>
         </div>
-        <div class="card">
+        <div class="card-cursos">
           <h3>JavaScript Confiante</h3>
           <p>Domine interatividade com código cru e direto.</p>
         </div>
-        <div class="card">
+        <div class="card-cursos">
           <h3>Design Neo Brutalism</h3>
           <p>Crie interfaces LOUD e memoráveis.</p>
         </div>
@@ -75,7 +75,7 @@
   </section>
 
   <!-- ABOUT SECTION -->
-  <section class="about-section">
+  <section class="about-section" id="sobre-nos">
     <div class="about-image-wrap">
       <img src="neobrutalismphoto.jpg" alt="Edifício brutalista">
     </div>
@@ -91,6 +91,50 @@
       <a href="#" class="btn-yellow small">Saiba mais</a>
     </div>
   </section>
+
+  <!-- PRICING SECTION -->
+   <section class="pricing" id="preços">
+    <div class="pricing-inner">
+      <h2><span class="highlight">Confira nossos preços!</span> </h2>
+    </div>
+
+    <div class="cards">
+      <div class="card-pricing">
+          <h3>Plano Iniciante</h3>
+          <h4>R$49/mês</h4>
+          <ul>
+            <li>Acesso a cursos básicos (HTML, CSS, fundamentos de design).</li>
+            <li>Material prático para começar sem enrolação.</li>
+            <li>Ideal para quem quer dar os primeiros passos.</li>
+          </ul>
+        <a href="#" class="btn-yellow">Quero assinar já.</a>
+      </div>
+      <div class="card-pricing">
+        <h3>Plano Criativo</h3>
+        <h4>R$99/mês</h4>
+        <ul>
+          <li>Todos os cursos básicos + intermediários (JavaScript, UI/UX).</li>
+          <li>Projetos guiados para praticar.</li>
+          <li>Suporte em comunidade brutalista.</li>
+          <li>Certificado de conclusão para cada curso.</li>
+        </ul>
+        <a href="#" class="btn-yellow">Quero assinar já.</a>
+        </div>
+      <div class="card-pricing">
+        <h3>Plano Profissional</h3>
+        <h4>R$199/mês</h4>
+        <ul>
+          <li>Acesso completo a todos os cursos.</li>
+          <li>Mentorias exclusivas com especialistas.</li>
+          <li>Certificado de conclusão para cada curso.</li>
+          <li>Conteúdo atualizado e novos módulos liberados.</li>
+        </ul>
+        <a href="#" class="btn-yellow">Quero assinar já.</a>
+      </div>
+    </div>
+
+
+   </section>
 
 </body>
 </html>

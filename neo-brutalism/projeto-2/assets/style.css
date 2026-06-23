@@ -12,11 +12,19 @@
     --blue: #3300FF;
   }
 
+  html{
+    scroll-behavior: smooth;
+  }
+
   body {
     margin: 0;
     background: var(--cream);
     font-family: 'Cousine', Cousine, monospace;
     color: var(--black);
+  }
+
+  section[id]{
+    scroll-margin-top: 10px;
   }
 
   img {
@@ -163,8 +171,8 @@
     left: 2%;
   }
 
-  /* ===== PURPLE SECTION ===== */
-  .purple-section {
+  /* ===== CURSOS SECTION ===== */
+  .cursos {
     background: var(--purple);
     color: #FCFCFC;
     padding: 80px 24px 100px;
@@ -172,13 +180,13 @@
     overflow: hidden;
   }
 
-  .purple-inner {
+  .cursos-inner {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
   }
 
-  .purple-inner h2 {
+  .cursos-inner h2 {
     font-size: 34px;
     max-width: 650px;
     line-height: 1.35;
@@ -192,7 +200,7 @@
     margin-bottom: 50px;
   }
 
-  .card {
+  .card-cursos {
     background: #FCFCFC;
     border: 3px solid var(--black);
     border-radius: 5px;
@@ -201,28 +209,28 @@
     text-align: center;
   }
 
-  .card:hover{
+  .card-cursos:hover{
     transform: translate(3px, 3px);
     box-shadow: 2px 2px 0px var(--black);
   }
 
-  .card h3 {
+  .card-cursos h3 {
     color: var(--orange);
     font-size: 19px;
     margin: 0 0 18px;
   }
 
-  .card:nth-child(2) h3 { color: var(--blue); }
-  .card:nth-child(3) h3 { color: var(--purple); }
+  .card-cursos:nth-child(2) h3 { color: var(--blue); }
+  .card-cursos:nth-child(3) h3 { color: var(--purple); }
 
-  .card p {
+  .card-cursos p {
     font-size: 15px;
     margin: 0;
     color: inherit;
   }
-  .card:nth-child(1) p { color: var(--orange); }
-  .card:nth-child(2) p { color: var(--blue); }
-  .card:nth-child(3) p { color: var(--purple); }
+  .card-cursos:nth-child(1) p { color: var(--orange); }
+  .card-cursos:nth-child(2) p { color: var(--blue); }
+  .card-cursos:nth-child(3) p { color: var(--purple); }
 
   .shape.star-yellow {
     width: 130px;
@@ -293,6 +301,73 @@
     font-size: 15px;
     box-shadow: 4px 4px 0px var(--black);
   }
+
+  /* ===== PRICING ===== */
+
+  .pricing{
+    background: var(--orange);
+    background-image: radial-gradient(circle, black 10%, transparent 11%);
+    background-size: 20px 20px;
+    color: #0D0D0D;
+    padding: 80px 24px 100px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pricing-inner{
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .pricing-inner h2 {
+    font-size: 34px;
+    max-width: auto;
+    line-height: 1.35;
+    margin: 0 0 50px;
+    text-align: center;
+  }
+
+  .highlight {
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  padding: 12px 24px;
+  border-radius: 5px;
+  }
+
+    .card-pricing{
+    background: #FCFCFC;
+    border: 3px solid var(--black);
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px var(--black);
+    padding: 30px 20px;
+    text-align: center;
+    flex-direction: column; /* organiza conteúdo em coluna */
+    justify-content: space-between; /* empurra o botão para o fim */
+    display: flex;
+    }
+
+    .card-pricing h3{
+    color: var(--black);
+    font-size: 19px;
+    margin: 0 0 18px;
+    }
+
+    .card-pricing h4{
+    color: var(--black);
+    font-size: 18px;
+    margin: 0 0 18px;
+    }
+
+    .card-pricing ul{
+    color: var(--black);
+    font-size: 16px;
+    margin: 0 0 18px;
+    text-align: left;
+    line-height: 1.35;
+    }
+
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 800px) {
